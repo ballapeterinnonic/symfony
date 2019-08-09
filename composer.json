@@ -6,7 +6,9 @@
     "autoload": {
         "psr-4": {
             "Blog\\CoreBundle\\": "src/Blog/CoreBundle",
-            "Blog\\ModelBundle\\": "src/Blog/ModelBundle"
+            "Blog\\ModelBundle\\": "src/Blog/ModelBundle",
+            "Blog\\AdminBundle\\": "src/Blog/AdminBundle",
+            "App\\LuckyBundle\\": "src/App/LuckyBundle"
         },
         "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
     },
@@ -16,18 +18,24 @@
     "require": {
         "php": ">=7.2.0",
         "doctrine/doctrine-bundle": "~1.4",
+        "doctrine/doctrine-fixtures-bundle": ">1.0",
+        "doctrine/doctrine-migrations-bundle": "~1.1",
+        "stof/doctrine-extensions-bundle": "dev-master",
+        "doctrine/migrations": "1.2.x-dev",
         "doctrine/orm": "^2.4.8",
         "incenteev/composer-parameter-handler": "~2.0",
         "sensio/distribution-bundle": "~4.0",
         "sensio/framework-extra-bundle": "^3.0.2",
+        "symfony/assetic-bundle": "^2.8",
         "symfony/monolog-bundle": "^3.0.2",
         "symfony/swiftmailer-bundle": "~2.3,>=2.3.10",
         "symfony/symfony": "2.8.*",
+        "twig/extensions": "^1.5",
         "twig/twig": "^1.0||^2.0"
     },
     "require-dev": {
         "sensio/generator-bundle": "~3.0",
-        "symfony/phpunit-bridge": "~2.7"
+        "symfony/phpunit-bridge": "^4.3"
     },
     "scripts": {
         "symfony-scripts": [

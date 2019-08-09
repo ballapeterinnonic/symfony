@@ -1,0 +1,16 @@
+{% extends 'LuckyBundle::lucky/layout.html.twig' %}
+
+{% block title %}My cool blog posts{% endblock %}
+
+{% block body %}
+    <h1>Hello</h1>
+    {{ include('LuckyBundle::lucky/includable.html.twig') }}
+
+    {% javascripts
+        '@LuckyBundle/Resources/public/js/lucky.js'
+        '@LuckyBundle/Resources/public/js/test.js'
+    %}
+        <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+
+{% endblock %}

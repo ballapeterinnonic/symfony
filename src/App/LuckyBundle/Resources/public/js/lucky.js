@@ -1,0 +1,1 @@
+console.log('OK Lucky.js');
